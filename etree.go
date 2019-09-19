@@ -456,6 +456,11 @@ func (e *Element) name() string {
 func (e *Element) Text() string {
 
 	//guy
+	if e == nil {
+		return ""
+	}
+	//
+	
 	if len(e.Child) == 0 {
 		return ""
 	}
