@@ -454,6 +454,8 @@ func (e *Element) name() string {
 // Text returns all character data immediately following the element's opening
 // tag.
 func (e *Element) Text() string {
+
+	//guy
 	if len(e.Child) == 0 {
 		return ""
 	}
